@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  ConcentrationGame
-//
-//  Created by 17 on 9/7/19.
-//  Copyright © 2019 17. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -96,13 +88,6 @@ class ViewController: UIViewController {
             winnerTextLabel.text = "Congratulations, you won! Maybe another round?"
         }
     }
-    
-//    func randEmoji() -> String {
-//        let range = [UInt32](0x1F40A...0x1F991)
-//        let ascii = range[Int(drand48() * (Double(range.count)))]
-//        let emoji = UnicodeScalar(ascii)?.description
-//        return emoji!
-//    }
     
 }
 
