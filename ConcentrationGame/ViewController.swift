@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         if currentRecord != nil {
             currentRecord = min(currentRecord!, flipCount)
             currentRecordLabel.text = "Current record: \(currentRecord!)"
-        } else {
+        } else if game.matchedCardsCount == cardButtons.count {
             currentRecordLabel.text = "Current record: \(flipCount)"
         }
         flipCount = 0
@@ -62,7 +62,6 @@ class ViewController: UIViewController {
         if let cardIndex = cardButtons.firstIndex(of: sender) {
             game.chooseCard(at: cardIndex)
             updateViewFromModel()
-            checkGameState()
         }
     }
     
@@ -89,20 +88,11 @@ class ViewController: UIViewController {
                 button.setTitle("", for: UIControl.State.normal)
             }
         }
-    }
-    
-    func checkGameState() {
         if game.isEnded() {
             winnerTextLabel.text = "Congratulations, you won! Maybe another round?"
+            winnerTextLabel.isEditable = false
         }
     }
-    
-//    func randEmoji() -> String {
-//        let range = [UInt32](0x1F40A...0x1F991)
-//        let ascii = range[Int(drand48() * (Double(range.count)))]
-//        let emoji = UnicodeScalar(ascii)?.description
-//        return emoji!
-//    }
-    
+   
 }
 
