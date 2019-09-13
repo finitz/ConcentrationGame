@@ -1,11 +1,3 @@
-//
-//  ConcentrationGame.swift
-//  ConcentrationGame
-//
-//  Created by 17 on 9/10/19.
-//  Copyright © 2019 17. All rights reserved.
-//
-
 import Foundation
 
 class ConcentrationGame {

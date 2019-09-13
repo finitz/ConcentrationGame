@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  ConcentrationGame
-//
-//  Created by 17 on 9/7/19.
-//  Copyright © 2019 17. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -93,6 +85,5 @@ class ViewController: UIViewController {
             winnerTextLabel.isEditable = false
         }
     }
-   
 }
 
